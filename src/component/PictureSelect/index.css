@@ -1,0 +1,50 @@
+li {
+  list-style: none;
+  float: left;
+  position: relative;
+  margin-right: 10px;
+}
+
+ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+}
+
+li .show {
+  display: block;
+}
+
+li span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: none;
+  width: 16px;
+  height: 16px;
+  direction: ltr;
+  background-color: #fff;
+  border-radius: 2px;
+  border-collapse: separate;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+li span::after {
+  position: absolute;
+  display: table;
+  border: 2px solid #fff;
+  border-top: 0;
+  top: 50%;
+  left: 22%;
+  width: 10px;
+  height: 15px;
+  border-left: 0;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+  opacity: 1;
+  content: " ";
+}
